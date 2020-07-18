@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:fillViewport="true">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to my Map App!"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Click one image to show the map"/>
+
+        <ImageView
+            android:id="@+id/coyoacan"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/coyoacan"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:onClick="onClick"/>
+
+        <ImageView
+            android:id="@+id/grutas"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/grutas"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:onClick="onClick"/>
+
+        <ImageView
+            android:id="@+id/revo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/revolucion"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:onClick="onClick"/>
+
+        <ImageView
+            android:id="@+id/tepoz"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/tepozotlan"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:onClick="onClick"/>
+
+        <!--Button
+            android:id="@+id/btnMaps"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="MyMaps"
+            android:onClick="irMapa"
+            ></Button-->
+    </TableLayout>
+</ScrollView>
